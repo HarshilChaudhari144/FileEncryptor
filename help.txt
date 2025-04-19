@@ -1,0 +1,53 @@
+📘 File Encryption/Decryption Tool - Help & Usage Guide
+
+This tool allows you to securely encrypt and decrypt files and folders using various algorithms.
+Each option in the main menu is explained below:
+
+🔐 Encrypt a File
+    - Select any file to encrypt using the selected algorithm.
+    - Output will be saved as filename.ext.enc.
+
+🔓 Decrypt a File
+    - Choose an encrypted .enc file and decrypt it using the correct password and algorithm.
+    - Output will be saved as decrypted_filename.ext.
+
+📁 Batch Encrypt (Directory)
+    - Encrypt all files in a selected folder.
+    - Each file will be saved with the .enc extension.
+
+📂 Batch Decrypt (Directory)
+    - Decrypt all '.enc' files inside a selected folder.
+    - Decrypted files retain their original names (prefixed with 'decrypted_').
+
+🗃️ Encrypt Folder (as Archive)
+    - Compress the entire folder into a .zip archive before encrypting it.
+    - Great for encrypting multiple files as one secure unit.
+
+🗃️ Decrypt Archive
+    - Decrypt previously encrypted archive files and automatically extract their contents.
+
+⚙️ Settings
+    - Customize how the tool behaves. Options include:
+        • Default algorithm (AES-CBC, AES-GCM, ChaCha20, 3DES)
+        • Preserve original extensions
+        • Default output directory
+        • Show summary after batch processing
+        • Recent activity limit
+        • Enable/disable colors and icons
+
+📘 Help & Usage Guide
+    - Shows this guide with helpful information about all features.
+
+📑 View Recent Activities
+    - See a list of your latest encryption and decryption actions from the log.
+
+❌ Exit
+    - Exit the tool.
+
+Tips:
+  - Use strong, memorable passwords. Losing your password means losing access to your files.
+  - Always double-check your selected algorithm during decryption.
+  - You can customize the tool's behavior from the Settings menu.
+  - Encrypted files have ".enc" extensions, decrypted files are prefixed with "decrypted_".
+
+Thank you for using this tool!

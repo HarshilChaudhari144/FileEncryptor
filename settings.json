@@ -1,0 +1,10 @@
+{
+    "default_algorithm": "AES-CBC",
+    "preserve_extension": true,
+    "output_directory": "",
+    "show_summary_after_batch": true,
+    "recent_activity_count": 5,
+    "use_colors": true,
+    "use_icons": true,
+    "default_output_dir": ""
+}

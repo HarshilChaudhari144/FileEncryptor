@@ -1,0 +1,126 @@
+2025-04-13 13:55:32.067973 | ENCRYPT | sample.txt | aes-cbc | error: encrypt() takes 2 positional arguments but 3 were given | N/A
+2025-04-13 13:59:27.167507 | ENCRYPT | sample.txt | aes-cbc | success | encrypted_file
+2025-04-13 14:00:05.530859 | DECRYPT | encrypted_file | aes-gcm | error: Decryption failed. Incorrect password or tampered data. | N/A
+2025-04-13 14:00:25.020377 | DECRYPT | encrypted_file | aes-cbc | success | decrypted_file
+2025-04-13 14:02:46.434436 | ENCRYPT | Devraj_print.pdf | aes-gcm | success | DevrajEnc.pdf
+2025-04-13 14:03:39.422133 | DECRYPT | DevrajEnc.pdf | aes-cbc | error: Data must be padded to 16 byte boundary in CBC mode | N/A
+2025-04-13 14:04:00.813363 | DECRYPT | DevrajEnc.pdf | aes-gcm | error: Decryption failed. Incorrect password or tampered data. | N/A
+2025-04-13 14:04:39.020332 | DECRYPT | DevrajEnc.pdf | chacha20 | success | DevrajDec.pdf
+2025-04-13 14:09:11.403830 | ENCRYPT | Devraj_print.pdf | chacha20 | success | DevEnc.pdf
+2025-04-13 14:09:29.326648 | DECRYPT | DevEnc.pdf | chacha20 | success | DevDec.pdf
+2025-04-13 16:04:28.656854 | ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | success | ../FileEncSam/encfile.txt
+2025-04-13 16:05:16.182227 | DECRYPT | ../FileEncSam/encfile.txt | aes-cbc | success | ../FileEncSam/decfile.txt
+2025-04-13 16:10:31.984711 | DECRYPT | ../FileEncSam/encfile.txt | aes-cbc | success | dec.pdf
+2025-04-14 12:27:22.207101 | BATCH-ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | success | ../FileEncSam/sample.txt.enc
+2025-04-14 12:27:22.265257 | BATCH-ENCRYPT | ../FileEncSam/sample2.txt | aes-cbc | success | ../FileEncSam/sample2.txt.enc
+2025-04-14 12:27:58.585704 | BATCH-DECRYPT | ../FileEncSam/sample.txt.enc | aes-cbc | success | ../FileEncSam/sample.txt.dec
+2025-04-14 12:27:58.640949 | BATCH-DECRYPT | ../FileEncSam/sample2.txt.enc | aes-cbc | success | ../FileEncSam/sample2.txt.dec
+2025-04-14 12:36:51.058887 | BATCH-ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | success | ../FileEncSam/sample.txt.enc
+2025-04-14 12:36:51.111411 | BATCH-ENCRYPT | ../FileEncSam/sample2.txt | aes-cbc | success | ../FileEncSam/sample2.txt.enc
+2025-04-14 12:46:34.058844 | BATCH-ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | error: [Errno 21] Is a directory: '../FileEnc' | N/A
+2025-04-14 12:46:34.113488 | BATCH-ENCRYPT | ../FileEncSam/sample2.txt | aes-cbc | error: [Errno 21] Is a directory: '../FileEnc' | N/A
+2025-04-14 12:47:30.363192 | BATCH-ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | error: [Errno 21] Is a directory: '../FileEnc/' | N/A
+2025-04-14 12:47:30.415373 | BATCH-ENCRYPT | ../FileEncSam/sample2.txt | aes-cbc | error: [Errno 21] Is a directory: '../FileEnc/' | N/A
+2025-04-14 12:48:50.010268 | BATCH-ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | error: [Errno 21] Is a directory: '../FileEnc' | N/A
+2025-04-14 12:48:50.062549 | BATCH-ENCRYPT | ../FileEncSam/sample2.txt | aes-cbc | error: [Errno 21] Is a directory: '../FileEnc' | N/A
+2025-04-14 12:51:12.033633 | BATCH-ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | error: [Errno 21] Is a directory: '../FileEnc' | N/A
+2025-04-14 12:51:12.085659 | BATCH-ENCRYPT | ../FileEncSam/sample2.txt | aes-cbc | error: [Errno 21] Is a directory: '../FileEnc' | N/A
+2025-04-14 12:54:45.067321 | BATCH-ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | success | ../FileEnc/sample.txt.enc
+2025-04-14 12:54:45.119389 | BATCH-ENCRYPT | ../FileEncSam/sample2.txt | aes-cbc | success | ../FileEnc/sample2.txt.enc
+2025-04-14 12:56:37.091805 | BATCH-DECRYPT | ../FileEnc/sample.txt.enc | aes-cbc | success | ../FileDec/sample.txt.dec.txt
+2025-04-14 12:56:37.145033 | BATCH-DECRYPT | ../FileEnc/sample2.txt.enc | aes-cbc | success | ../FileDec/sample2.txt.dec.txt
+2025-04-14 12:57:59.654945 | ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | success | ../FileEncSam/sample.txt.enc
+2025-04-14 13:50:58.057200 | BATCH-ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | success | ../FileEnc/sample.txt.enc
+2025-04-14 13:50:58.109471 | BATCH-ENCRYPT | ../FileEncSam/sample2.txt | aes-cbc | success | ../FileEnc/sample2.txt.enc
+2025-04-14 16:32:02.308258 | ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | success | ../FileEnc/SammyEnc.txt
+2025-04-15 19:11:18.170323 | ENCRYPT | Devraj_print.pdf | aes-cbc | error: encrypt() got an unexpected keyword argument 'preserve_extension' | N/A
+2025-04-15 19:17:24.114259 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | DevEnc
+2025-04-15 19:17:59.996974 | DECRYPT | DevEnc | aes-cbc | success | DevDec.pdf
+2025-04-15 19:56:15.400103 | ENCRYPT | Devraj_print.pdf | aes-cbc | error: encrypt() got an unexpected keyword argument 'preserve_extension' | N/A
+2025-04-15 19:59:28.901910 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | DevEnc
+2025-04-15 20:16:30.896263 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | DevEnc
+2025-04-15 20:18:34.153823 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | DevEnc
+2025-04-15 20:21:31.442476 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | DevEnc
+2025-04-15 20:21:57.009193 | DECRYPT | DevEnc | aes-cbc | success | DevDec
+2025-04-15 20:43:06.432853 | ENCRYPT | Devraj_print.pdf | AES-CBC | error: 'AES-CBC' | N/A
+2025-04-15 20:47:29.025197 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | DevEnc
+2025-04-15 20:52:23.696907 | DECRYPT | DevEnc | aes-cbc | error: Decryption failed. Possibly due to wrong password or corrupted file. | N/A
+2025-04-15 20:52:59.980384 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | DevEnc
+2025-04-15 20:53:14.867874 | DECRYPT | DevEnc | aes-cbc | success | DevDec
+2025-04-15 22:01:15.209016 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | DevEnc.pdf
+2025-04-15 22:01:48.269470 | DECRYPT | DevEnc.pdf | aes-cbc | success | DevDec.bin
+2025-04-15 22:07:09.525169 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | DevEnc.pdf
+2025-04-15 22:07:26.601561 | DECRYPT | DevEnc.pdf | aes-cbc | success | DevDec
+2025-04-15 22:11:25.666562 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | DevEnc.pdf
+2025-04-15 22:11:45.143350 | DECRYPT | DevEnc.pdf | aes-cbc | success | DevDec
+2025-04-16 09:04:27.781996 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | Devraj_print.pdf.enc
+2025-04-16 09:06:19.968564 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | Devraj_print.pdf.enc
+2025-04-16 09:06:51.243453 | DECRYPT | Devraj_print.pdf.enc | aes-cbc | success | decrypted_Devraj_print.pdf
+2025-04-16 09:09:18.250745 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | Devraj_print.pdf.enc
+2025-04-16 09:10:03.232737 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | Devraj_print.pdf.enc
+2025-04-16 09:13:54.358613 | ENCRYPT | Devraj_print.pdf | aes-cbc | error: [Errno 2] No such file or directory: '' | N/A
+2025-04-16 09:14:15.534963 | ENCRYPT | Devraj_print.pdf | aes-cbc | error: [Errno 2] No such file or directory: '' | N/A
+2025-04-16 09:17:24.431023 | ENCRYPT | Devraj_print.pdf | aes-cbc | error: [Errno 2] No such file or directory: '' | N/A
+2025-04-16 09:22:53.311822 | ENCRYPT | Devraj_print.pdf | aes-cbc | error: cannot access local variable 'output_file' where it is not associated with a value | N/A
+2025-04-16 09:24:05.388591 | ENCRYPT | Devraj_print.pdf | aes-cbc | error: [Errno 2] No such file or directory: '' | N/A
+2025-04-16 09:26:05.319935 | ENCRYPT | Devraj_print.pdf | aes-cbc | error: [Errno 2] No such file or directory: '' | N/A
+2025-04-16 09:27:34.550780 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-16 09:30:04.474996 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-16 09:33:27.378548 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-16 09:36:56.738789 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEnc/Devraj_print.pdf.enc
+2025-04-16 09:37:26.593011 | DECRYPT | ../FileEnc/Devraj_print.pdf.enc | aes-cbc | success | /data/data/com.termux/files/home/FileDec/decrypted_Devraj_print.pdf.pdf
+2025-04-16 09:39:53.987170 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEnc/Devraj_print.pdf.enc.enc
+2025-04-16 09:44:35.541758 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEnc/Devraj_print.pdf.enc
+2025-04-16 09:44:57.876163 | DECRYPT | ../FileEnc/Devraj_print.pdf.enc | aes-cbc | success | /data/data/com.termux/files/home/FileDec/decrypted_Devraj_print.pdf.pdf.enc
+2025-04-16 09:48:22.995074 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEnc/Devraj_print.pdf.enc
+2025-04-16 09:48:46.536669 | DECRYPT | ../FileEnc/Devraj_print.pdf.enc | aes-cbc | success | /data/data/com.termux/files/home/FileDec/decrypted_Devraj_print.pdf
+2025-04-16 09:50:04.064033 | BATCH-ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | success | /data/data/com.termux/files/home/FileEnc/sample.txt.enc
+2025-04-16 09:50:04.125399 | BATCH-ENCRYPT | ../FileEncSam/sample2.txt | aes-cbc | success | /data/data/com.termux/files/home/FileEnc/sample2.txt.enc
+2025-04-16 09:50:43.513141 | BATCH-DECRYPT | ../FileEnc/sample.txt.enc | aes-cbc | success | /data/data/com.termux/files/home/FileDec/decrypted_sample.txt
+2025-04-16 09:50:43.572072 | BATCH-DECRYPT | ../FileEnc/sample2.txt.enc | aes-cbc | success | /data/data/com.termux/files/home/FileDec/decrypted_sample2.txt
+2025-04-16 18:19:58.566131 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-16 19:40:35.206527 | DECRYPT | Devraj_print.pdf.enc | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Devraj_print.pdf
+2025-04-16 22:11:24.414388 | ENCRYPT | ../storage/downloads/encrypto-app/WBB.mp4 | aes-cbc | success | /data/data/com.termux/files/home/storage/downloads/encrypto-app/WBB.mp4.enc
+2025-04-16 22:12:16.299997 | DECRYPT | ../storage/downloads/encrypto-app/WBB.mp4.enc | aes-cbc | success | /data/data/com.termux/files/home/storage/downloads/encrypto-app/decrypted_WBB.mp4
+2025-04-16 22:14:25.166097 | DECRYPT | Devraj_print.pdf | aes-cbc | error: Data must be padded to 16 byte boundary in CBC mode | N/A
+2025-04-16 22:15:11.549163 | DECRYPT | Devraj_print.pdf.enc | aes-gcm | error: decrypt() got an unexpected keyword argument 'output_dir' | N/A
+2025-04-16 22:18:19.139671 | ENCRYPT | Devraj_print.pdf | aes-gcm | error: encrypt() got an unexpected keyword argument 'output_dir' | N/A
+2025-04-16 22:19:09.524447 | ENCRYPT | Devraj_print.pdf | aes-gcm | error: encrypt() got an unexpected keyword argument 'output_dir' | N/A
+2025-04-16 22:22:16.346115 | ENCRYPT | Devraj_print.pdf | aes-gcm | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-16 22:24:55.160587 | ENCRYPT | Devraj_print.pdf | chacha20 | success | /data/data/com.termux/files/home/FileEnc/Devraj_print.pdf.enc
+2025-04-16 22:25:13.045311 | ENCRYPT | Devraj_print.pdf | 3des | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-16 22:25:27.864119 | DECRYPT | Devraj_print.pdf.enc | 3des | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Devraj_print.pdf
+2025-04-17 16:14:23.824591 | ENCRYPT_ARCHIVE | ../FileEncSam | aes-cbc | success | /data/data/com.termux/files/home/FileEnc/FileEncSam.zip.enc
+2025-04-17 16:15:14.470823 | DECRYPT_ARCHIVE | ../FileEnc/FileEncSam.zip.enc | aes-cbc | error: name 'extract_zip' is not defined | N/A
+2025-04-17 16:18:06.961265 | DECRYPT_ARCHIVE | ../FileEnc/FileEncSam.zip.enc | aes-cbc | success | ../FileDec/decrypted_FileEncSam.zip
+2025-04-18 13:14:16.580819 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-18 13:14:30.727491 | DECRYPT | Devraj_print.pdf.enc | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Devraj_print.pdf
+2025-04-18 15:23:25.338702 | ENCRYPT | Devraj_print.pdf | aes-gcm | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-18 15:23:37.629595 | DECRYPT | Devraj_print.pdf.enc | aes-gcm | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Devraj_print.pdf
+2025-04-18 16:47:39.389549 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-18 16:48:06.806073 | DECRYPT | Devraj_print.pdf.enc | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Devraj_print.pdf
+2025-04-18 16:49:46.979899 | ENCRYPT | ../storage/downloads/encrypto-app/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv.enc
+2025-04-18 16:54:22.344749 | ENCRYPT | ../storage/downloads/encrypto-app/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv.enc
+2025-04-18 16:54:51.361443 | DECRYPT | Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv.enc | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv
+2025-04-18 16:58:39.126666 | ENCRYPT | ../storage/downloads/encrypto-app/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv.enc
+2025-04-18 16:59:03.999537 | DECRYPT | Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv.enc | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv
+2025-04-18 17:01:55.790001 | ENCRYPT | ../storage/downloads/encrypto-app/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv | aes-gcm | success | /data/data/com.termux/files/home/FileEncryptor/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv.enc
+2025-04-18 17:13:35.389133 | ENCRYPT | ../storage/downloads/encrypto-app/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv | chacha20 | error: encrypt() got an unexpected keyword argument 'progress_callback' | N/A
+2025-04-18 17:18:39.139498 | ENCRYPT | ../storage/downloads/encrypto-app/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv | chacha20 | success | /data/data/com.termux/files/home/FileEncryptor/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv.enc
+2025-04-18 17:18:56.245802 | DECRYPT | Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv.enc | chacha20 | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv
+2025-04-18 17:19:23.177165 | ENCRYPT | ../storage/downloads/encrypto-app/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv | 3des | success | /data/data/com.termux/files/home/FileEncryptor/Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv.enc
+2025-04-18 17:19:41.654439 | DECRYPT | Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv.enc | 3des | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Ghosts.2021.S03E10.720p.x265.English.Esubs.MoviesMod.org.mkv
+2025-04-18 17:21:33.569069 | ENCRYPT | Devraj_print.pdf | aes-gcm | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-18 17:21:47.159567 | DECRYPT | Devraj_print.pdf.enc | aes-gcm | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Devraj_print.pdf
+2025-04-18 17:23:58.485466 | BATCH-ENCRYPT | ../FileEncSam/sample.txt | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/sample.txt.enc
+2025-04-18 17:23:58.561745 | BATCH-ENCRYPT | ../FileEncSam/sample2.txt | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/sample2.txt.enc
+2025-04-18 17:25:17.893400 | ENCRYPT_ARCHIVE | ../FileEncSam | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/FileEncSam.zip.enc
+2025-04-18 17:25:36.064283 | DECRYPT_ARCHIVE | FileEncSam.zip.enc | aes-cbc | success | decrypted_FileEncSam.zip
+2025-04-18 17:26:59.777947 | DECRYPT_ARCHIVE | FileEncSam.zip.enc | aes-cbc | success | decrypted_FileEncSam.zip
+2025-04-18 17:30:36.489971 | DECRYPT_ARCHIVE | FileEncSam.zip.enc | aes-cbc | success | decrypted_FileEncSam.zip
+2025-04-18 17:33:24.210859 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-18 17:33:38.661715 | DECRYPT | Devraj_print.pdf.enc | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Devraj_print.pdf
+2025-04-18 17:36:20.080344 | ENCRYPT | Devraj_print.pdf | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/Devraj_print.pdf.enc
+2025-04-18 17:36:31.006812 | DECRYPT | Devraj_print.pdf.enc | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/decrypted_Devraj_print.pdf
+2025-04-18 17:36:52.535368 | ENCRYPT_ARCHIVE | ../FileEncSam | aes-cbc | success | /data/data/com.termux/files/home/FileEncryptor/FileEncSam.zip.enc
+2025-04-18 17:37:07.538026 | DECRYPT_ARCHIVE | FileEncSam.zip.enc | aes-cbc | success | decrypted_FileEncSam.zip
