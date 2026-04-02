@@ -1,6 +1,6 @@
-# 🔐 PyCryptor: Multi-Algorithm File Security Tool
+# 🔐 FileEncryptor: Multi-Algorithm File Security Tool
 
-PyCryptor is a feature-rich CLI utility designed for encrypting and decrypting files and directories. It supports multiple encryption modes, batch processing, folder archiving, and includes educational "hacker demo" scripts to demonstrate the importance of strong passwords.
+FileEncryptor is a feature-rich CLI utility designed for encrypting and decrypting files and directories. It supports multiple encryption modes, batch processing, folder archiving, and includes educational "hacker demo" scripts to demonstrate the importance of strong passwords.
 
 ## ✨ Features
 
